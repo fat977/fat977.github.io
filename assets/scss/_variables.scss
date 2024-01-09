@@ -1,0 +1,67 @@
+:root{
+    --main-color :#17a2b8;
+    --white-color : #fff;
+    --border : 1px solid #17a2b8;
+}
+@media screen and (max-width:800px) {
+    header {
+        height: 50vh;
+
+        .navbar-nav {
+            width: 100%;
+            .dropdown-menu li a{
+                text-align: center;
+            }
+        }
+    }
+
+    .chairs, .rooms , .curtains, .kitchen{
+        [class^="col"] {
+            padding: 30px;
+           
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                overflow-x: hidden;
+            }
+        }
+        h3{
+            margin-left: 20px;
+        }
+    }
+
+    .img-contact{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    header {
+        height: 60vh;
+    }
+
+    .img-contact{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:900px) {
+    header {
+        height: 50vh;
+    }
+
+    .img-contact{
+        height: 50vh;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

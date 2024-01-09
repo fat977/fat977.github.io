@@ -1,0 +1,148 @@
+@import "btn.scss";
+@import "owl-slider";
+@import "gallery";
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(rgb(16, 29, 44, 0.5), rgb(16, 29, 44, 0.5)),
+        url("../img/web-coverbanner-900x600-1558625354.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+
+    .bg-dark {
+        background-color: transparent !important;
+    }
+
+    .bgColor.scrolled {
+        background-color: var(--white-color) !important;
+        color: var(--main-color) !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    .nav-link {
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            height: 2px;
+            width: 100%;
+            left: 0;
+            background-color: var(--main-color);
+            transform-origin: center;
+            transform: scaleX(0);
+            transition: transform 650ms;
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+        }
+
+    }
+
+    .input-group {
+        [class~="fa-search"] {
+            color: var(--main-color) !important;
+
+        }
+
+        input {
+            border: var(--border);
+
+            ::placeholder {
+                color: var(--main-color);
+            }
+        }
+    }
+
+    .info {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+        .btn {
+            @include btn_submit
+        }
+
+    }
+}
+
+.home {
+    overflow-x: hidden;
+
+    .d-flex a {
+        border: var(--border);
+
+        &:hover {
+            background-color: var(--main-color);
+            color: var(--white-color);
+        }
+    }
+
+    @include btn-style;
+}
+
+.chairs,
+.rooms,
+.curtains,
+.kitchen,.testimonials {
+    [class^="col"] {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    h3 {
+        color: var(--main-color);
+    }
+
+    @include btn-style;
+}
+
+.contact{
+    .btn{
+        @include btn_submit;
+        background-color: var(--white-color);
+        color: var(--main-color);
+    }
+    
+    background-color: rgba(192, 243, 243, 0.2);
+    
+
+    .form-control {
+        border:none;
+        border-bottom: 1px solid var(--main-color);
+        background-color: transparent;
+    }
+
+    textarea{
+        resize: none;
+    }
+   
+}
+
+footer {
+    $icons : ("star" rgb(232, 232, 31), "facebook" #0842a0ff, "twitter" #1b6ef3ff, "instagram" rgb(157, 11, 62), "google-plus-g" rgb(232, 16, 16));
+
+    @each $name, $color in $icons {
+        .fa-#{$name} {
+            color: $color;
+        }
+    }
+}
+
+@import "variables.scss";

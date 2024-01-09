@@ -1,0 +1,15 @@
+{
+  "name": "modern-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style expanded assets/scss/style.scss assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "owl.carousel": "^2.3.4"
+  }
+}

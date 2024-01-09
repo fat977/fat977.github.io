@@ -1,0 +1,33 @@
+
+.gallery {
+    .filter-item {
+        border: var(--border);
+        color: var(--main-color);
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .filter-item.active {
+        color: var(--white-color);
+        background-color: var(--main-color);
+    }
+
+    .gallery-item {
+        display: none;
+        transition: 2s;
+    }
+
+    .gallery-item.room {
+        display: block;
+    }
+
+    .gallery-item.show {
+        display: block;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .gallery-item.hide {
+        display: none;
+    }
+
+}

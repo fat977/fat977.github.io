@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modern Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts CDN Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- additional css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top bgColor p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h4>Modern Home</h4>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end mobileMenu w-75" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-5 align-content-sm-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="#">Home</a></Link>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Sections
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#chair">Chairs</a></li>
+                                <li><a class="dropdown-item" href="#room">Rooms</a></li>
+
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="#contact">Contact</a></Link>
+                        </li>
+                    </ul>
+                    <div class="d-flex d-none d-sm-block">
+                        <div class="input-group">
+                            <input class="form-control  rounded-pill" type="search" placeholder="search">
+                            <span class="input-group-prepend">
+                                <button style="margin-left: -60px;" class="btn " type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="info d-none d-sm-block">
+            <h1 class="text-white">Website</h1>
+            <button type="button" class="btn ">Shop Now</button>
+            <button type="button" class="btn">Contact Us</button>
+        </div>
+
+    </header>
+
+    <div class="container my-5 home">
+        <div class="row align-items-center my-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <img src="assets/img/home1.jpg" width="100%" class="img-fluid" alt="home1">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt ac tellus
+                    vitae ullamcorper. Vivamus congue vel dolor at lobortis. Nunc laoreet libero sed sem
+                    interdum mattis. Vestibulum non urna nisl. Donec sollicitudin iaculis aliquam.
+                    Etiam blandit felis condimentum consequat tincidunt. Curabitur et libero ultrices,
+                    tristique nibh ut, tincidunt odio.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <img src="assets/img/home2.jpg" width="100%" class="img-fluid" alt="home2">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt ac tellus
+                    vitae ullamcorper. Vivamus congue vel dolor at lobortis. Nunc laoreet libero sed sem
+                    interdum mattis. Vestibulum non urna nisl. Donec sollicitudin iaculis aliquam.
+                    Etiam blandit felis condimentum consequat tincidunt. Curabitur et libero ultrices,
+                    tristique nibh ut, tincidunt odio.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <button type="button" class="btn">View More</button>
+        </div>
+    </div>
+
+    <div class="container home my-5 gallery">
+        <div class=" gallery-filter d-flex justify-content-around p-3 my-4  mx-auto w-50">
+            <div class="filter-item active show p-2" data-filter="room">Rooms</div>
+            <div class="filter-item p-2" data-filter="chair">Chairs</div>
+            <div class="filter-item p-2" data-filter="curtain">Curtains</div>
+            <div class="filter-item p-2" data-filter="kitchen">Kitchen</div>
+        </div>
+
+        <div class="chairs my-5 gallery-item chair" id="chair">
+            <h3>Chairs</h3>
+            <div class="row mt-4">
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/chair1.jpg" class="img-fluid  h-75" width="100%" alt="chair1">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/chair2.jpg" class="img-fluid  h-75" width="100%" alt="chair2">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/chair3.jpg" class="img-fluid  h-75" width="100%" alt="chair3">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/chair4.jpg" class="img-fluid  h-75" width="100%" alt="chair4">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button type="button" class="btn">View More</button>
+            </div>
+        </div>
+
+        <div class="rooms my-5 gallery-item room" id="room">
+            <h3>Rooms</h3>
+            <div class="row mt-4">
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/room1.jpg" class="img-fluid h-75" width="100%" alt="room1">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/room2.jpg" class="img-fluid h-75" width="100%" alt="room2">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/room3.jpg" class="img-fluid h-75" width="100%" alt="room3">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/room4.jpg" class="img-fluid h-75" width="100%" alt="room4">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button type="button" class="btn">View More</button>
+            </div>
+        </div>
+
+        <div class="curtains my-5 gallery-item curtain" id="curtain">
+            <h3>Curtains</h3>
+            <div class="row mt-4">
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/curt1.jpg" class="img-fluid  h-75" width="100%" alt="curt1">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/curt2.jpg" class="img-fluid  h-75" width="100%" alt="curt2">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/curt3.jpg" class="img-fluid  h-75" width="100%" alt="curt3">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/curt4.jpg" class="img-fluid  h-75" width="100%" alt="curt4">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button type="button" class="btn">View More</button>
+            </div>
+        </div>
+
+        <div class="kitchen my-5 gallery-item kitchen" id="kitchen">
+            <h3>Kitchen</h3>
+            <div class="row mt-4">
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/kit1.jpg" class="img-fluid  h-75" width="100%" alt="kit1">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/kit2.jpg" class="img-fluid  h-75" width="100%" alt="kit2">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/kit3.jpg" class="img-fluid  h-75" width="100%" alt="kit3">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-xl-3 col-xs-6 gallery-item-inner">
+                    <img src="assets/img/kit4.jpg" class="img-fluid  h-75" width="100%" alt="kit4">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button type="button" class="btn">View More</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="slider" class="testimonials my-5">
+        <div class="container">
+            <h3 class="text-center"><b>TESTIMONIALS</b></h3>
+            <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="assets/img/testimonials-01.jpg" class="w-25 rounded-circle  mt-3" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Client</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                            temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="assets/img/testimonials-01.jpg" class="w-25 rounded-circle mt-3" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Client</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                            temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="assets/img/testimonials-01.jpg" class="w-25 rounded-circle  mt-3" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Client</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                            temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="assets/img/testimonials-01.jpg" class="w-25 rounded-circle  mt-3" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Client</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                            temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container contact my-5 shadow" id="contact">
+        <div class="row align-items-center">
+            <div class="col-lg-5 px-0">
+                <img src="assets/img/alexandra-gorn-W5dsm9n6e3g-unsplash.jpg" width="100%" class="img-fluid img-contact me-0" alt="">
+            </div>
+            <div class="col-lg-7">
+                <form action="/action_page.php">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        <label for="pwd">Password</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <textarea class="form-control" rows="5" id="msg" name="text"></textarea>
+                        <label for="msg">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 d-block p-3">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container my-5 text-center">
+       
+        <div>
+            <span><i class="fa-solid fa-star me-2"></i>Follow us</span>
+        </div>
+        <div class="display-6 mt-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+        </div> 
+    </footer>
+
+    <!--AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <!--owl-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+     <!--custom js-->
+     <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
